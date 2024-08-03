@@ -1,0 +1,87 @@
+# Ignore data directories
+data/raw/*
+data/processed/*
+data/external/*
+
+# But keep README.md or other documentation files in the data directories
+!data/raw/README.md
+!data/processed/README.md
+!data/external/README.md
+
+# Ignore model directories
+models/model1/*
+models/model2/*
+models/model3/*
+
+# But keep model card documentation
+!models/model1/model_card.md
+!models/model2/model_card.md
+!models/model3/model_card.md
+
+# Ignore Jupyter Notebook checkpoints
+notebooks/.ipynb_checkpoints/
+
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore log files
+*.log
+
+# Ignore virtual environment directories
+venv/
+env/
+.venv/
+.env/
+
+# Ignore the environment-specific files
+.env
+.env.*
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.bak
+
+# Ignore outputs of unit tests
+tests/__pycache__/
+tests/*.py[cod]
+tests/*$py.class
+
+# Ignore package management files
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Ignore Jupyter Notebook output cells
+notebooks/*-checkpoint.ipynb
+
+# Ignore any binary or serialized files
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.model
+
+# Ignore configuration files
+config.json
+
+# Ignore IPython history
+.ipython/
+
+# Ignore VSCode settings folder
+.vscode/
+
+# Ignore Anaconda specific files
+conda-meta/
+*.conda
+
+# Ignore pipfile and pipenv virtual environments
+Pipfile.lock
